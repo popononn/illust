@@ -1,0 +1,113 @@
+body{
+	margin:0 0 0 0;
+	color:#000;
+	margin: auto;
+  /*font-family: Noto Sans Japanese,Noto Sans JP,sans-serif;*/
+  	font-family:'avalonfont';  
+}
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+.font-weight-200{
+  font-weight: 200;
+}
+h1{
+	font-weight: 200;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	}
+h2{
+	font-weight: 200;
+	text-align:center;
+	}
+h3{
+	font-weight: 200;
+	text-align:center;
+	}
+.toplink{
+	color:#36393d;
+	}
+.headertop{
+	color:#feb7bf;
+	height:60px;
+	width:100%;
+	text-align:center;
+	}
+.headertitle{
+	top:4px;
+	left:4px;
+	min-width:700px;
+	}
+.firebase{
+	margin:0 auto;
+	padding-top:30px;
+	padding-bottom:30px;
+	padding-left:30px;
+	padding-right:30px;
+	max-width:1100px;
+	word-wrap: break-word;
+	}
+.contents{
+	margin:0 auto;
+	padding-top:30px;
+	padding-bottom:30px;
+	padding-left:30px;
+	padding-right:30px;
+	max-width:700px;
+	word-wrap: break-word;
+	font-family: Noto Sans Japanese,Noto Sans JP,sans-serif;
+	}
+.maincontents{
+	width:100%;
+	min-width:700px;
+	color:#000;
+	padding-top:20px;
+	font-family: Noto Sans Japanese,Noto Sans JP,sans-serif;
+	}
+.snsicon{
+	max-width:50px;
+}
+.snsicon2{
+	max-width:100px;
+}
+.hide {
+    display:none;
+}
+
+@font-face {
+  font-family: 'avalonfont';
+  src: url('Avalon-Regular.woff') format('woff');
+}
+
+h2{
+	font-family:'avalonfont';
+	font-weight: 200;
+	text-transform: uppercase;
+	font-size: 30px;
+	letter-spacing: .1em;
+}
+.menuzone{
+	text-align:center;
+	font-weight: 200;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	}
+
+#wrap{
+	max-width: 1100px;
+	margin: 20px auto;
+	text-align:center;
+}
+.smallimage {
+	border: 1px solid #CCC;
+	padding: 3px;
+	margin: 10px 5px 0 0;
+	max-height:300px;
+}
+#grid {
+	width: 1100px;
+	
+}
+.gl {
+	margin: 5px;
+	float: left;
+	list-style: none;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>データベースへの再接続</title>
+    <link rel="stylesheet" href="css/style.css?0527" />
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.js"></script>
+<script>
+$(document).ready(function() 
+    { 
+		$("#myTable").tablesorter();
+		$("#myTable").on("DOMSubtreeModified propertychange",function(){
+			$("#myTable").trigger("update");
+		});
+    } 
+); 
+</script>
+<script src="js/hideshow.js?0530"></script>
+<script type="text/javascript" src="js/shortcut.js"></script>
+<style type="text/css">
+<!--
+body{
+	font-family: 'Lato', sans-serif;}
+
+.headertop{
+	background-color:#222426;
+	color:#fff;
+	height:30px;
+	width:100%;
+	}
+.headertitle{
+	position:relative;
+	top:4px;
+	left:4px;
+	}
+/* Rules for sizing the icon. */
+.material-icons.orange600 { color: #FB8C00; }
+.material-icons.md-18 { font-size: 18px;color:#fff; }
+.material-icons.md-24 { font-size: 24px;color:#fff; }
+.material-icons.md-36 { font-size: 36px;color:#fff; }
+.material-icons.md-48 { font-size: 48px;color:#fff; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+}
+
+-->
+</style>
+  </head>
+<body>
+<!--<body  onSelectStart="return false" oncontextmenu="return false;"> -->
+<div class="headertop"><span class="headertitle"></span><div style="position:absolute;left:380px;top:0px;">
+<select id="servername" placeholder="holder" name="kibun"  style="width:120px;" required>
+<option value="20593717_reload">再接続モード</option>
+<option value="popono_test">イラストを受信する</option>
+</select>
+<!--<input id="servername" placeholder="サーバー名" style="width:100px;"  required>-->
+</div></div>
+
+<div style="text-align:center;width:500px;">
+<p>
+<b>初めて接続した方へ</b>
+</p>
+<hr>
+<p>
+１．右上の「再接続モード」を”イラストを受信する”へ切り替えます。<br>
+</p>
+<p>
+２．次に再接続ボタンをクリックします。
+</p>
+<div>
+<button id="send">再接続</button>
+</div>
+<p>
+３．ページを更新するとイラストが表示されます。<br>
+<div>
+<button href="#" onClick="window.close(); return false;">ウィンドウを閉じる</button>
+</div>
+<hr>
+<b>最新版のGoogle Chrome,Firefox以外のブラウザでは動作しません。</b>
+</p>
+</div>
+
+
+
+<script type="text/javascript"><!--
+// --></script>
+    <!-- script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script -->
+    <!-- ================= -->
+	<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-messaging.js"></script>
+	<script src="js/chatImage.js"></script>
+	<script type="text/javascript" src="js/clipboard.min.js"></script>
+	<script type="text/javascript" src="js/database.js"></script>
+	<script>
+
+</script>
+<audio id="ChatSound" preload="auto"><source src="http://gbf-raidfinder.aikats.us/audio/tweet.ogg"></audio>
+</body>
+</html>

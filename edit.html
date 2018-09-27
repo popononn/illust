@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>popono illust</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+<script src="js/hideshow.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/jquery-ui-1.8.18.custom.min.js"></script>
+<script src="js/jquery.smooth-scroll.min.js"></script>
+<script src="js/lightbox.js"></script>
+<script type="text/javascript" src="js/shortcut.js"></script>
+
+<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+  </head>
+<body>
+<!--<body  onSelectStart="return false" oncontextmenu="return false;"> -->
+<div class="headertop"><span class="headertitle">
+<h1 class="font-weight-200"><a href="index.html" class="toplink">popono illust</a></h1>
+</span></div>
+<div class="menuzone">
+<!--メニューバー-->
+	<div class="menubar">
+	        <nav>
+	          <ul class="menu">
+	            <li class="menu__none"><a onclick="aboutopen();">About</a></li>
+	            <li class="menu__multi">
+	              <a onclick="galleryopen();" class="init-bottom">Archive</a>
+	              <ul class="menu__second-level">
+	                <li>
+	                  <a href="#" class="init-right">Child Menu</a>
+	                  <ul class="menu__third-level">
+	                    <li>
+	                      <a href="#" class="init-right">Grandchild Menu</a>
+	                      <ul class="menu__fourth-level">
+	                        <li><a href="#">Great-Grandchild Menu</a></li>
+	                        <li><a href="#">Great-Grandchild Menu</a></li>
+	                        <li><a href="#">Great-Grandchild Menu</a></li>
+	                      </ul>
+	                    </li>
+	                    <li><a href="#">Grandchild Menu</a></li>
+	                    <li><a href="#">Grandchild Menu</a></li>
+	                  </ul>
+	                </li>
+	                <li>
+	                  <a href="#" class="init-right">Child Menu</a>
+	                  <ul class="menu__third-level">
+	                    <li><a href="#">Grandchild Menu</a></li>
+	                    <li>
+	                      <a href="#" class="init-right">Grandchild Menu</a>
+	                      <ul class="menu__fourth-level">
+	                        <li><a href="#">Great-Grandchild Menu</a></li>
+	                        <li><a href="#">Great-Grandchild Menu</a></li>
+	                        <li><a href="#">Great-Grandchild Menu</a></li>
+	                      </ul>
+	                    </li>
+	                    <li><a href="#">Grandchild Menu</a></li>
+	                  </ul>
+	                </li>
+	                <li>
+	                  <a href="#" class="init-right">Child Menu</a>
+	                  <ul class="menu__third-level">
+	                    <li><a href="#">Grandchild Menu</a></li>
+	                    <li><a href="#">Grandchild Menu</a></li>
+	                    <li>
+	                      <a href="#" class="init-right">Grandchild Menu</a>
+	                      <ul class="menu__fourth-level">
+	                        <li><a href="#">Great-Grandchild Menu</a></li>
+	                        <li><a href="#">Great-Grandchild Menu</a></li>
+	                        <li><a href="#">Great-Grandchild Menu</a></li>
+	                      </ul>
+	                    </li>
+	                  </ul>
+	                </li>
+	                
+	              </ul>
+	            </li>
+	            <li class="menu__none"><a onclick="linkopen();">Link</a></li>
+	            <li class="menu__none"><a onclick="contactopen();">Contact</a></li>
+	<!--
+	            <li class="menu__mega">
+	              <a href="#" class="init-bottom">Menu mega</a>
+	              <ul class="menu__second-level">
+	                <li><a href="#">Child Menu</a></li>
+	                <li><a href="#">Child Menu</a></li>
+	                <li><a href="#">Child Menu</a></li>
+	                <li><a href="#">Child Menu</a></li>
+	                <li><a href="#">Child Menu</a></li>
+	                <li><a href="#">Child Menu</a></li>
+	                <li><a href="#">Child Menu</a></li>
+	                <li><a href="#">Child Menu</a></li>
+	                <li><a href="#">Child Menu</a></li>
+	                <li><a href="#">Child Menu</a></li>
+	                <li><a href="#">Child Menu</a></li>
+	                <li><a href="#">Child Menu</a></li>
+	                <li><a href="#">Child Menu</a></li>
+	              </ul>
+	            </li>
+	-->
+	          </ul>
+	        </nav>
+	</div>
+<!--メニューバー-->
+</div>
+
+<!--firebase send zone-->
+
+<div>
+<select id="servername" placeholder="holder" name="kibun" required>
+<option value="popono_test">イラスト１</option>
+<option value="popono_test2">イラスト２</option>
+</select>
+	<form name="faceForm">
+	<input id="name" placeholder="画像URL"  required>
+	<textarea id="message" placeholder="画像url(Enter)" style="height:50px;width:240px;" name="face"></textarea>
+	<div id="send" class="sendstyle"></div>
+	<script>
+	var svn;
+	var usname;
+	shortcut.add("Enter", function() {
+	document.getElementById("send").click();
+	});
+	</script>
+	</form>
+</div>
+<!--firebase send zone-->
+<div class="maincontents">
+<div id="top">
+	<div class="firebase">
+		<!--グリッド表示-->
+<!--lightbox gallery 02 free template▼-->
+<div id="grid">
+<ul id="wrap">
+
+</ul>
+</div>
+
+<!--
+<a href="https://pbs.twimg.com/media/DlRYJw_U8AIq6AT.jpg" rel="lightbox[plants]" title="説明文 #1"><img class="smallimage" src="https://pbs.twimg.com/media/DlRYJw_U8AIq6AT.jpg" alt="代替テキスト" /></a>
+<a href="https://pbs.twimg.com/media/DjxHLumU4AAiSRP.jpg" rel="lightbox[plants]" title="説明文 #1"><img class="smallimage" src="https://pbs.twimg.com/media/DjxHLumU4AAiSRP.jpg" alt="代替テキスト" /></a>
+-->
+
+
+  </div> 
+<!--lightbox gallery 02 free template▲-->
+		<!--グリッド表示-->
+	</div>
+
+</div>
+<div class="hide" id="about">
+	<h2>About</h2>
+	<div class="contents">
+	１．このサイトについての説明<br>
+	２．どのようスタイルで描いているか。<br>
+	連絡などはContactからお願いします。<br>
+	<a href="#" type="button" value="このページを再読込します" onclick="window.location.reload();" style="color:#000;">最新の状態に更新</a></span><span class="headertitle">
+	<a href="./window.html" onclick="window.open('dbtest.html', '', 'width=500,height=500'); return false;" style="color:#000;">何も表示されない方はこちら</a>
+	<select id="servername" placeholder="holder" name="kibun" required>
+<option value="popono_test">イラストを受信する(デフォルト)</option>
+
+</select>
+	</div>
+</div>
+<div class="hide" id="gallery">
+	<h2>Archive</h2>
+	<div class="contents">
+	準備中
+	</div>
+</div>
+<div class="hide" id="link">
+<h2>Link</h2>
+	<div class="contents">
+	絵を書くにあたってお世話になっているサイトなどを掲載するスペース。<br>
+	</div>
+</div>
+<div class="hide" id="contact">
+	<h2>Contact</h2>
+	<div class="contents">
+	twitter,pixiv<br>
+	</div>
+</div>
+</div>
+<script type="text/javascript"><!--
+// --></script>
+    <!-- script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script -->
+    <!-- ================= -->
+	<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-messaging.js"></script>
+	<script type="text/javascript" src="js/clipboard.min.js"></script>
+	<script type="text/javascript" src="js/database.js"></script>
+	<script>
+
+</script>
+</body>
+</html>
